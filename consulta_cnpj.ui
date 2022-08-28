@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>## Consulta de CNPJ ##</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QLabel" name="lb_rsocial">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Razão Social</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_rsocial">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>92</y>
+     <width>331</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_nfantasia">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>92</y>
+     <width>331</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_nfantasia">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>70</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Nome Fantasia</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_endereco">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>331</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>118</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Endereço</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_numero">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>140</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_numero">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>118</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Número</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_bairro">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>140</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_bairro">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>118</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Bairro</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_telefone">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>190</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>168</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Telefone</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_email">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>190</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>168</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>E-mail</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_data_abertura">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>40</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_5">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>18</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Data de abertura</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>18</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>CNPJ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_cnpj">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_7">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>18</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Situação Cadastral</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_situacao_cadastral">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>40</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_8">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>18</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Capital Social</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_capital_social">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>40</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_cidade">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>242</y>
+     <width>431</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Cidade</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_uf">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>242</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_numero_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>220</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>UF</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_cep">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>242</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_numero_3">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>220</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>CEP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_complemento">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>190</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(20, 20, 20);
+font: 57 9pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>168</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Complemento</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ln_cons_cnpj">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>312</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;Ubuntu&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_11">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>285</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#555500;&quot;&gt;Digite o CNPJ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>282</y>
+     <width>681</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lb_rsocial_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>321</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#555500;&quot;&gt;Desenvolvido por Giuliano Vianna - (65) 99622-3168&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_rsocial_13">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>55</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>8</pointsize>
+      <weight>3</weight>
+      <italic>true</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 italic 8pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Obs: somente números&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_consultar">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>28</y>
+      <width>90</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>Consultar!</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>lb_rsocial</zorder>
+  <zorder>ln_rsocial</zorder>
+  <zorder>ln_nfantasia</zorder>
+  <zorder>lb_nfantasia</zorder>
+  <zorder>ln_endereco</zorder>
+  <zorder>lb_rsocial_2</zorder>
+  <zorder>ln_numero</zorder>
+  <zorder>lb_numero</zorder>
+  <zorder>ln_bairro</zorder>
+  <zorder>lb_bairro</zorder>
+  <zorder>ln_telefone</zorder>
+  <zorder>lb_rsocial_3</zorder>
+  <zorder>ln_email</zorder>
+  <zorder>lb_rsocial_4</zorder>
+  <zorder>ln_data_abertura</zorder>
+  <zorder>lb_rsocial_5</zorder>
+  <zorder>lb_rsocial_6</zorder>
+  <zorder>ln_cnpj</zorder>
+  <zorder>lb_rsocial_7</zorder>
+  <zorder>ln_situacao_cadastral</zorder>
+  <zorder>lb_rsocial_8</zorder>
+  <zorder>ln_capital_social</zorder>
+  <zorder>ln_cidade</zorder>
+  <zorder>lb_rsocial_9</zorder>
+  <zorder>ln_uf</zorder>
+  <zorder>lb_numero_2</zorder>
+  <zorder>ln_cep</zorder>
+  <zorder>lb_numero_3</zorder>
+  <zorder>ln_complemento</zorder>
+  <zorder>lb_rsocial_10</zorder>
+  <zorder>ln_cons_cnpj</zorder>
+  <zorder>lb_rsocial_11</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>ln_cons_cnpj</tabstop>
+  <tabstop>bt_consultar</tabstop>
+  <tabstop>ln_cnpj</tabstop>
+  <tabstop>ln_data_abertura</tabstop>
+  <tabstop>ln_situacao_cadastral</tabstop>
+  <tabstop>ln_capital_social</tabstop>
+  <tabstop>ln_rsocial</tabstop>
+  <tabstop>ln_nfantasia</tabstop>
+  <tabstop>ln_endereco</tabstop>
+  <tabstop>ln_numero</tabstop>
+  <tabstop>ln_bairro</tabstop>
+  <tabstop>ln_cidade</tabstop>
+  <tabstop>ln_uf</tabstop>
+  <tabstop>ln_cep</tabstop>
+  <tabstop>ln_complemento</tabstop>
+  <tabstop>ln_telefone</tabstop>
+  <tabstop>ln_email</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
