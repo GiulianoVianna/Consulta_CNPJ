@@ -1,4 +1,4 @@
-# Consulta_CNPJ
+# Consulta de CNPJ.
 
 # Em desenvolvimento.
 
