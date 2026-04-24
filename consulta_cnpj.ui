@@ -37,12 +37,6 @@ QLabel#lb_titulo {
     color: #0f2742;
 }
 
-QLabel#lb_subtitulo {
-    color: #5d7188;
-    font: 10pt &quot;Ubuntu&quot;;
-    background-color: transparent;
-}
-
 QLabel {
     color: #46627d;
     font: 600 9pt &quot;Ubuntu&quot;;
@@ -100,19 +94,6 @@ QPushButton#bt_limpar:hover {
    </property>
    <property name="text">
     <string>Consulta de CNPJ</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="lb_subtitulo">
-   <property name="geometry">
-    <rect>
-     <x>36</x>
-     <y>52</y>
-     <width>500</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Pesquise dados cadastrais e visualize a inscrição estadual com mais clareza.</string>
    </property>
   </widget>
   <widget class="QFrame" name="toolbar">
@@ -180,20 +161,6 @@ QPushButton#bt_limpar:hover {
     </property>
     <property name="text">
      <string>Limpar</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lb_rsocial_12">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>20</y>
-      <width>340</width>
-      <height>42</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Desenvolvido por Giuliano Vianna
-(65) 99622-3168</string>
     </property>
    </widget>
   </widget>
@@ -580,6 +547,29 @@ QPushButton#bt_limpar:hover {
      </rect>
     </property>
    </widget>
+  </widget>
+  <widget class="QLabel" name="lb_rsocial_12">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>340</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Desenvolvido por Giuliano Vianna
+(65) 99622-3168</string>
+   </property>
   </widget>
  </widget>
  <tabstops>
