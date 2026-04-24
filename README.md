@@ -45,38 +45,42 @@ BUILD.md                  Instrucoes resumidas de empacotamento
 
 ## Como Executar
 
-### 1. Criar ambiente virtual
+### Windows PowerShell
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python -m pip install --upgrade pip
+.\.venv\Scripts\python -m pip install PyQt5 requests
+.\.venv\Scripts\python consulta_cnpj.py
+```
+
+### Linux
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-```
-
-### 2. Instalar dependencias
-
-```bash
 python -m pip install --upgrade pip
 python -m pip install PyQt5 requests
-```
-
-### 3. Iniciar a aplicacao
-
-```bash
 python consulta_cnpj.py
 ```
 
 ## Como Gerar o Executavel
 
-Para instalar as dependencias de build:
+Para Windows moderno:
 
-```bash
+```powershell
+python -m pip install --upgrade pip
 python -m pip install -r requirements-build.txt
+python build_executavel.py
 ```
 
-Para gerar o executavel:
+Para maquinas antigas com Windows 7, Windows 8.0 ou Windows Server antigo,
+gere o executavel com Python 3.8:
 
-```bash
-python build_executavel.py
+```powershell
+py -3.8 -m venv .venv38
+.\.venv38\Scripts\python -m pip install -r requirements-build.txt
+.\.venv38\Scripts\python build_executavel.py
 ```
 
 Saida esperada:
@@ -84,12 +88,20 @@ Saida esperada:
 - Linux: `dist/consulta_cnpj/consulta_cnpj`
 - Windows: `dist/consulta_cnpj/consulta_cnpj.exe`
 
+Envie a pasta inteira `dist/consulta_cnpj` para a outra maquina, nao apenas o
+arquivo `.exe`, porque as dependencias ficam dentro da pasta.
+
+Veja mais detalhes em `BUILD.md`, incluindo a solucao para erro envolvendo
+`python312.dll` e `PssQuerySnapshot`.
+
 ## Regras de Build
 
 - O executavel de Linux deve ser gerado no Linux.
 - O executavel de Windows deve ser gerado no Windows.
 - O `PyInstaller` nao faz cross-compile confiavel entre Linux e Windows.
 - O arquivo `consulta_cnpj.ui` e incluido automaticamente no build.
+- Para Windows antigo, gere o executavel com Python 3.8 na mesma arquitetura do
+  Windows de destino.
 
 ## Fonte dos Dados
 

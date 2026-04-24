@@ -14,6 +14,7 @@ UI_FILE = BASE_DIR / "consulta_cnpj.ui"
 BUILD_DIR = BASE_DIR / "build"
 DIST_DIR = BASE_DIR / "dist"
 SPEC_FILE = BASE_DIR / f"{APP_NAME}.spec"
+VERSAO_PYTHON_RECOMENDADA_WINDOWS_ANTIGO = (3, 8)
 
 
 def validar_arquivos():
@@ -26,11 +27,35 @@ def validar_arquivos():
 
 def validar_dependencias():
     if importlib.util.find_spec("PyInstaller") is None:
+        instalar_dependencias = (
+            ".venv\\Scripts\\python -m pip install -r requirements-build.txt"
+            if os.name == "nt"
+            else ".venv/bin/python -m pip install -r requirements-build.txt"
+        )
         raise RuntimeError(
             "PyInstaller nao esta instalado neste Python.\n"
             "Crie um ambiente virtual e instale as dependencias nele.\n"
             f"Exemplo:\n{sys.executable} -m venv .venv\n"
-            ".venv/bin/python -m pip install -r requirements-build.txt"
+            f"{instalar_dependencias}"
+        )
+
+
+def avisar_compatibilidade_windows():
+    if os.name != "nt":
+        return
+
+    versao = sys.version_info[:2]
+    if versao >= (3, 12):
+        print(
+            "\nAVISO DE COMPATIBILIDADE:\n"
+            f"Este build esta usando Python {versao[0]}.{versao[1]}.\n"
+            "Executaveis gerados com Python 3.12 podem falhar em Windows antigo "
+            "com erro envolvendo python312.dll/PssQuerySnapshot.\n"
+            "Se a aplicacao precisar rodar em Windows 7, Windows 8.0 ou "
+            "Windows Server antigo, gere o executavel com Python "
+            f"{VERSAO_PYTHON_RECOMENDADA_WINDOWS_ANTIGO[0]}."
+            f"{VERSAO_PYTHON_RECOMENDADA_WINDOWS_ANTIGO[1]} "
+            "na mesma arquitetura do Windows de destino.\n"
         )
 
 
@@ -66,6 +91,7 @@ def comando_pyinstaller():
 def main():
     validar_arquivos()
     validar_dependencias()
+    avisar_compatibilidade_windows()
     limpar_saida()
 
     sistema = platform.system()
