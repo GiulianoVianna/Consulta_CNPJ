@@ -54,11 +54,10 @@ def limpar_tela():
 
 
 def configurar_centralizacao():
-    widgets = (
-        tela.lb_titulo,
-        tela.lb_subtitulo,
-        tela.toolbar,
-        tela.card,
+    widgets = tuple(
+        widget
+        for nome_widget in ("lb_titulo", "lb_rsocial_12", "toolbar", "card")
+        if (widget := getattr(tela, nome_widget, None)) is not None
     )
     geometrias_base = {widget.objectName(): QRect(widget.geometry()) for widget in widgets}
 
