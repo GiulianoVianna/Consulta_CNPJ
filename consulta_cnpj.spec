@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['/media/giuliano/ADATA HD710 PRO1/Programação/Projetos_python/consulta_cnpj/consulta_cnpj.py'],
+    ['C:\\Users\\giuli\\Documents\\Python\\CNPJ\\Consulta_CNPJ\\consulta_cnpj.py'],
     pathex=[],
     binaries=[],
-    datas=[('/media/giuliano/ADATA HD710 PRO1/Programação/Projetos_python/consulta_cnpj/consulta_cnpj.ui', '.')],
+    datas=[('C:\\Users\\giuli\\Documents\\Python\\CNPJ\\Consulta_CNPJ\\consulta_cnpj.ui', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

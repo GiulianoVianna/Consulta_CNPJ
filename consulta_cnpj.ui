@@ -140,9 +140,9 @@ QPushButton#bt_limpar:hover {
    <widget class="QPushButton" name="bt_consultar">
     <property name="geometry">
      <rect>
-      <x>674</x>
+      <x>645</x>
       <y>42</y>
-      <width>92</width>
+      <width>121</width>
       <height>40</height>
      </rect>
     </property>
@@ -551,9 +551,9 @@ QPushButton#bt_limpar:hover {
   <widget class="QLabel" name="lb_rsocial_12">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>50</y>
-     <width>340</width>
+     <x>640</x>
+     <y>20</y>
+     <width>281</width>
      <height>42</height>
     </rect>
    </property>
